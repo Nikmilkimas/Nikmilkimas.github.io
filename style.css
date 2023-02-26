@@ -1,0 +1,51 @@
+div {
+    margin: 100px 100px 100px 100px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 3s;
+}
+div:hover {
+    background-color: aquamarine;
+    /* transform: translate(1111px, 600px); */
+    /* transform: rotate(180deg); */
+    /* transform: scale(30%); */
+    /* transform: skewY(30deg); */
+    /* transform: perspective(1000px) rotateY(180deg); */
+}
+@keyframes go {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(1000px, 500px);
+    }
+}
+@keyframes go2  {
+    0% {
+        translate: (0, 0);
+    }
+    20% {
+        translate: (-1000px,0);
+    }
+    40% {
+        translate: (1000px,-500px) scale(0);
+    }
+    60% {
+        translate: (0,-500px);
+    }
+    80% {
+        translate: (0,0);
+    }
+    100% {
+        translate: (0,500);
+    }
+}
+.block{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://mobimg.b-cdn.net/v3/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: go2 10s;
+}
